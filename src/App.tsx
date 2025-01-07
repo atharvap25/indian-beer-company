@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import LoadingScreen from './components/LoadingScreen';
 import HomeScreen from './components/HomeScreen';
 
