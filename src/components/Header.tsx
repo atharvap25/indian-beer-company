@@ -1,10 +1,10 @@
-import './Header.css';
+import "./Header.css";
 
 export default function Header() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg fixed-top">
-        <div className="container-fluid">
+        <div className="container">
           <a className="navbar-brand">
             <img src="/logo.png" alt="Bootstrap" width="106" height="50" />
           </a>
@@ -33,7 +33,7 @@ export default function Header() {
               </li>
             </ul>
             <form className="d-flex" role="search">
-                {/* end content */}
+              {/* end content */}
             </form>
           </div>
         </div>
