@@ -1,13 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/react-app/public/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indian Beer Company</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBC</title>
+    <!-- Google Fonts - Yeseva One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation - Top Left -->
+    <nav class="navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+    </nav>
+
+    <!-- Tagline Text -->
+    <div class="tagline">
+        <p>Indian</p>
+        <p>Roots,</p>
+        <p>In Every</p>
+        <p>Sip.</p>
+    </div>
+
+    <!-- IBC Label - Top Right -->
+    <div class="logo-top-right">
+        <img src="IBC_label.svg" alt="IBC Label">
+    </div>
+
+    <!-- IBC Code - Bottom Right -->
+    <div class="logo-bottom-right">
+        <img src="IBC_code.svg" alt="IBC Code">
+    </div>
+
+    <!-- Bottom Left Text -->
+    <div class="bottom-text">
+        <p>Nestled in the region of Malwa, we bring you MP's first microbrewery.</p>
+    </div>
+
+    <!-- Three.js Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <!-- Three.js Library -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
 </html>
+
