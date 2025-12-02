@@ -61,7 +61,7 @@ const loader = new GLTFLoader();
 let beerCan;
 
 loader.load(
-    'mayura.glb',
+    'assets/mayura.glb',
     function (gltf) {
         beerCan = gltf.scene;
         
